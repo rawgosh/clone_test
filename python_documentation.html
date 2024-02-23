@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#introduction">Introduction</a>
+        </li>
+        <li>
+          <a href="#hello_world" class="nav-link">Hello World</a>
+        </li>
+        <li>
+          <a href="#variables" class="nav-link">Variables</a>
+        </li>
+        <li>
+          <a href="data_types" class="nav-link">Data Types</a>
+        </li>
+        <li>
+          <a href="#if_else" class="nav-link">if .. else Statement</a>
+        </li>
+        <li>
+          <a href="#for_loop" class="nav-link">For Loop</a>
+        </li>
+        <li>
+          <a href="#while_statement" class="nav-link">While Statement</a>
+        </li>
+        <li>
+          <a href="#function_declaration" class="nav-link">Function Declaration</a>
+        </li>
+        <li>
+          <a href="#class" class="nav-link">Class</a>
+        </li>
+        <li>
+          <a href="#refernece" class="nav-link">Reference</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main_doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Python, a versatile and high-level programming language, has emerged as a powerhouse in the realm of software development, data analysis, artificial intelligence, and web development. Created by Guido van Rossum and first released in 1991, Python prioritizes readability and simplicity, making it an ideal language for both beginners and experienced developers alike. Its syntax emphasizes code readability, allowing programmers to express concepts in fewer lines of code than languages like C++ or Java. Python's extensive standard library and vibrant community support further contribute to its popularity, fostering a collaborative environment where developers can easily access a wealth of resources and third-party packages.
+          </p>
+          <p>
+            One of Python's key strengths lies in its adaptability, making it suitable for a wide range of applications. Its object-oriented, imperative, and functional programming paradigms provide developers with flexibility, enabling them to tackle diverse tasks, from developing web applications using frameworks like Django and Flask to handling scientific computing tasks with libraries such as NumPy and SciPy. Python's cross-platform compatibility ensures that code can run seamlessly on various operating systems, enhancing its portability and ease of deployment. As industries continue to evolve, Python remains at the forefront, powering innovations in areas like machine learning, data science, and automation. <br>
+            Python's user-friendly syntax, extensive documentation, and a welcoming community have contributed to its widespread adoption across industries and academia. The language's simplicity, combined with its powerful capabilities, positions Python as an excellent choice for beginners taking their first steps into the world of programming and for seasoned developers seeking efficiency and productivity in their projects. As we delve deeper into the multifaceted landscape of Python, we'll explore its core features, diverse applications, and the vibrant ecosystem that continues to drive its success in the dynamic field of technology.
+          </p>
+          <ul>
+            <li>Dynamic Typing: Python allows flexible variable interpretation at runtime without explicit type declarations, enhancing code simplicity.
+            </li>
+            <li>Automatic Memory Management: The built-in garbage collector automates memory allocation and deallocation, reducing the risk of memory-related errors and making Python more user-friendly.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="hello_world">
+        <header>Hello World</header>
+        <article>
+        <p>To get started with writing python, open the IDE and write your first "Hello world" Python code:
+          <code>"print("Hello World")"</code>. Click on run to see the output. The print function is used to display text in the console.
+        </p>
+      </article>
+      </section>
+      <section class="main-section" id="variables">
+        <header>Variables</header>
+      <article>
+        <p><b>Dynamic Typing:</b> Python is dynamically typed, meaning you don't need to explicitly declare the data type of a variable. The interpreter infers the type based on the assigned value. For example:
+        <code>"x = 10  &nbsp; # x is an integer
+          y = "hello" # y is a string"</code>
+        </p>
+      </article>
+      </section>
+      <section class="main-section" id="data_types">
+        <header>Data Types</header>
+        <article>
+        <p>Python supports a variety of data types to handle different types of values. Here are some fundamental data types in Python: <br><br>
+
+          Integers (int): Whole numbers without decimal points. Example:
+          <code>x = 5</code>
+          Floats (float): Numbers with decimal points or in exponential form. Example:
+        <code>y = 3.14</code>
+          Strings (str): Sequences of characters enclosed in single or double quotes. Example:
+          <code></code>message = "Hello, Python!"</code>
+          Booleans (bool): Represents truth values, either True or False. Often used in conditional statements. Example:
+          <code>is_python_fun = True</code>
+          Lists (list): Ordered and mutable collections of elements. Elements can be of different data types. Example:
+          <code>my_list = [1, 2, "three", True]</code>
+          Tuples (tuple): Ordered and immutable collections. Elements can be of different data types. Example:
+          <code>my_tuple = (1, 2, "three", True)</code>
+          Sets (set): Unordered collections of unique elements. Example:
+          <code>my_set = {1, 2, 3, 3, 4}  # Results in {1, 2, 3, 4}</code>
+          Dictionaries (dict): Unordered collections of key-value pairs. Example:
+          <code>my_dict = {'name': 'John', 'age': 25, 'city': 'New York'}</code>
+          Understanding these data types is crucial for effective programming in Python, as they provide the building blocks for organizing and manipulating data within your programs.</p>
+        </article>
+      </section>
+      <section class="main-section" id="if_else">
+        <header>If/Else Statement</header>
+        <article>
+        <p>
+          In Python, the if-else statement is used for conditional execution of code. It allows you to specify different blocks of code to be executed based on whether a given condition is true or false. The basic syntax is as follows:
+        <code>if condition:
+            # code to be executed if the condition is true
+          else:
+              # code to be executed if the condition is false
+        </code>
+    
+          Here's a simple example:
+        <code>x = 10
+          if x > 5:
+            print("x is greater than 5")
+          else:
+            print("x is not greater than 5")
+        </code>
+          In this example, if the condition x > 5 is true, the code inside the first block (indicated by the indentation) will be executed. Otherwise, if the condition is false, the code inside the else block will be executed. <br>          
+          You can also have multiple conditions using elif (short for "else if"):
+        <code>y = 7
+          if y > 10:
+            print("y is greater than 10")
+          elif y > 5:
+            print("y is greater than 5 but not greater than 10")
+          else:
+            print("y is 5 or less")
+        </code>
+          Here, if the first condition is true, the first block is executed. If not, it checks the next condition (elif). If none of the conditions is true, the code in the else block is executed.
+        </p>
+        </article>
+      </section>
+      <section class="main-section" id="for_loop">
+        <header>For Loop</header>
+        <article>
+        <p>
+          In Python, the for loop is used to iterate over a sequence (such as a list, tuple, string, or range) or other iterable objects. The basic syntax of a for loop is as follows:
+          <code>for variable in iterable:
+            # code to be executed in each iteration</code>
+            Here's a simple example using a list:
+          <code>fruits = ["apple", "banana", "cherry"]
+            for fruit in fruits:
+            print(fruit)</code>
+            In this example, the for loop iterates over each element in the fruits list, and in each iteration, the fruit variable takes on the value of the current element. The print(fruit) statement inside the loop then prints each fruit. <br>
+            You can also use the range() function to generate a sequence of numbers and iterate over it:
+          <code>for i in range(5):
+            print(i)</code>
+            This loop will iterate from 0 to 4, printing each value of i in each iteration. <br>
+            Additionally, you can use the enumerate() function to iterate over both the elements and their indices in a sequence:
+          <code>for index, value in enumerate(fruits):
+            print(f"Index {index}: {value}")</code>
+            This loop prints both the index and the corresponding value for each element in the fruits list.
+        </p>
+      </article>
+      </section>
+      <section class="main-section" id="while_statement"></section>
+      <section class="main-section" id="function_declaration"></section>
+      <section class="main-section" id="class"></section>
+      <section class="main-section" id="reference"></section>
+    </main>
+  </body>
+</html>
