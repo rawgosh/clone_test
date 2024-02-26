@@ -1,127 +1,144 @@
-html,
+/* Styles for HTML and body */
+html, 
 body {
-  min-width: 290px;
-  color: #4d4e53;
-  background-color: #ffffff;
-  font-family: 'Open Sans', Arial, sans-serif;
-  line-height: 1.5;
+  min-width: 290px;                  /* Set minimum width for better responsiveness */
+  color: #4d4e53;                    /* Text color */
+  background-color: #ffffff;         /* Background color */
+  font-family: 'Open Sans', Arial, sans-serif;  /* Font family */
+  line-height: 1.5;                  /* Line height for better readability */
 }
 
+/* Styles for the fixed navigation bar */
 #navbar {
-  position: fixed;
-  min-width: 290px;
-  top: 0px;
-  left: 0px;
-  width: 300px;
-  height: 100%;
-  border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
+  position: fixed;                   /* Fixed position at the top of the viewport */
+  max-width: auto;                   /* Maximum width for responsiveness */
+  top: 0px;                          /* Positioned at the top */
+  left: 0px;                         /* Positioned at the left */
+  height: 100%;                     /* Full height of the viewport */
+  width: 320px;                      /* Fixed width for the navigation bar */
+  border-right: solid;               /* Right border for separation */
+  border-color: rgba(0, 22, 22, 0.4); /* Border color with transparency */
 }
 
+/* Styles for the header element */
 header {
-  color: black;
-  margin: 10px;
-  text-align: center;
-  font-size: 1.8em;
-  font-weight: thin;
+  color: black;                      /* Text color */
+  margin: 10px;                      /* Margin around the header */
+  text-align: center;                /* Center-align the text */
+  font-size: 1.8em;                  /* Font size */
+  font-weight: thin;                 /* Thin font weight */
 }
 
+/* Styles for the header within #main-doc */
 #main-doc header {
-  text-align: left;
-  margin: 0px;
+  text-align: left;                  /* Left-align the text */
+  margin: 0px;                       /* Remove margin */
 }
 
+/* Styles for the navigation bar unordered list */
 #navbar ul {
-  height: 88%;
-  padding: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
+  height: 67%;                       /* Set height for the list */
+  padding: 0;                        /* Remove default padding */
+  overflow-y: 250px;                 /* Vertical overflow with a maximum height */
+  overflow-x: hidden;                /* Hide horizontal overflow */
 }
 
+/* Styles for the navigation bar list items */
 #navbar li {
-  color: #4d4e53;
-  border-top: 1px solid;
-  list-style: none;
-  position: relative;
-  width: 100%;
+  color: #4d4e53;                    /* Text color */
+  border-top: 1px solid;             /* Top border for separation */
+  list-style: none;                  /* Remove default list styles */
+  width: 100%;                       /* Full width for each list item */
 }
 
+/* Styles for the navigation bar links */
 #navbar a {
-  display: block;
-  padding: 10px 30px;
-  color: #4d4e53;
-  text-decoration: none;
-  cursor: pointer;
+  display: block;                    /* Display as block for full width */
+  padding: 10px 30px;                /* Padding for better clickability */
+  color: #4d4e53;                    /* Text color */
+  text-decoration: none;             /* Remove underlines from links */
+  cursor: pointer;                   /* Set cursor to pointer */
 }
 
+/* Styles for the main document content */
 #main-doc {
-  position: absolute;
-  margin-left: 310px;
-  padding: 20px;
-  margin-bottom: 110px;
+  margin-left: 310px;                /* Margin to create space for the fixed navigation bar */
+  padding: 20px;                     /* Padding around the main document content */
+  margin-bottom: 110px;              /* Bottom margin for space after content */
 }
 
+/* Styles for the articles within sections */
 section article {
-  color: #4d4e53;
-  margin: 15px;
-  font-size: 0.96em;
-}
+  color: #4d4e53;                    /* Text color */
+  margin: 15px;                      /* Margin around articles */
+  font-size: 0.96em;                 /* Font size for articles */
+} 
 
+/* Styles for list items within sections */
 section li {
-  margin: 15px 0px 0px 20px;
+  margin: 15px 0px 0px 20px;          /* Margin for list items */
 }
 
+/* Styles for code elements */
 code {
-  display: block;
-  text-align: left;
-  white-space: pre-line;
-  position: relative;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 2;
-  background-color: #f7f7f7;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
+  display: block;                    /* Display as block for proper formatting */
+  text-align: left;                  /* Left-align the text within code elements */
+  white-space: pre-line;             /* Preserve line breaks */
+  position: relative;                /* Relative positioning */
+  word-break: normal;                /* Break words only at allowed break points */
+  word-wrap: normal;                 /* Do not allow wrapping within words */
+  line-height: 2;                    /* Line height within code elements */
+  background-color: #f7f7f7;         /* Background color for code blocks */
+  padding: 15px;                     /* Padding around code blocks */
+  margin: 10px;                      /* Margin around code blocks */
+  border-radius: 5px;                /* Border radius for a rounded appearance */
 }
 
+/* Media Query for screens with a max-width of 815px */
 @media only screen and (max-width: 815px) {
-  /* For mobile phones: */
+  /* Adjust styles for smaller screens */
   #navbar ul {
-    border: 1px solid;
-    height: 207px;
+    border: 1px solid;               /* Add border for styling */
+    height: 207px;                   /* Set fixed height for the list */
   }
 
   #navbar {
-    background-color: white;
-    position: absolute;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-height: 275px;
-    border: none;
-    z-index: 1;
-    border-bottom: 2px solid;
+    position: absolute;              /* Change position to absolute for scrolling */
+    max-height: 275px;               /* Maximum height for the navigation bar */
+    background-color: white;         /* Background color for the navigation bar */
+    top: 0;                          /* Positioned at the top */
+    padding: 0;                      /* Remove padding */
+    z-index: 1;                      /* Set z-index to be above other elements */
+    width: 100%;                     /* Full width */
+    margin: 0;                       /* Remove margin */
+    border-bottom: 2px solid;        /* Bottom border for separation */
   }
 
   #main-doc {
-    position: relative;
-    margin-left: 0px;
-    margin-top: 270px;
+    position: relative;              /* Change position to relative */
+    margin-left: 0;                  /* Remove left margin */
+    margin-top: 270px;               /* Adjust top margin */
+  }
+  
+  code {
+    margin-left: 0;                  /* Remove left margin for code elements */
+    width: 100%;                     /* Full width for code elements */
   }
 }
-@media only screen and (max-width: 400px) {
-  #main-doc {
-    margin-left: -10px;
-  }
 
+/* Media Query for screens with a max-width of 400px */
+@media only screen and (max-width: 400px) {
+  /* Further adjustments for smaller screens */
+  #main-doc {
+    margin-left: -10px;              /* Adjust left margin for the main document */
+  }
+  
   code {
-    margin-left: -20px;
-    width: 100%;
-    padding: 15px;
-    padding-left: 10px;
-    padding-right: 45px;
-    min-width: 233px;
+    margin-left: -20px;              /* Adjust left margin for code elements */
+    width: 100%;                     /* Full width for code elements */
+    padding: 15px;                   /* Adjust padding for code elements */
+    padding-left: 10px;              /* Adjust left padding for code elements */
+    padding-right: 45px;             /* Adjust right padding for code elements */
+    min-width: 233px;                /* Minimum width for code elements */
   }
 }
